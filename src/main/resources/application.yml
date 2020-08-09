@@ -1,0 +1,16 @@
+server:
+  port: 9999
+
+spring:
+  ## mysql
+  datasource:
+    url: jdbc:mysql://demo-mysql.cx6ri0whzc8f.ap-southeast-1.rds.amazonaws.com:3306/demo?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=Asia/Ho_Chi_Minh&useSSL=true&requireSSL=false
+    username: root
+    password: P@ssw0rd
+  jpa:
+    hibernate:
+      ddl-auto: update
+logging:
+  level:
+    root: info
+    com.aws: debug
